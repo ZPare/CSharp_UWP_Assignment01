@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Problem2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Problem2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Grid.ColumnSpan="1" Background="#1f3d7a"></Border>
+        <Border Grid.Row="1" Grid.ColumnSpan="1" Background="Aqua"></Border>
+        <Border Grid.Row="2" Grid.ColumnSpan="1" Background="White"></Border>
+
+        <Grid Grid.Row="0">
+            <TextBlock x:Name="textblock1" Text="see output here...." Foreground="White" FontSize="28" FontWeight="Bold" VerticalAlignment="Center" Height="82" HorizontalTextAlignment="Center" TextAlignment="Center"  />
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TextBox x:Name="textbox1" Header="Enter Word: " Text="enter input here..." HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="28" Height="94" Width="341" TextAlignment="Center" Background="White" />
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="leftButton"  Content="Uppercase" Click="leftButton_onClick" FontSize="28"  HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top" Height="71" Width="158" />
+            <Button x:Name="rightButton" Content="Length"    Click="rightButton_onClick" FontSize="28" Grid.Column="1" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top" Height="71" Width="158" />
+        </Grid>
+
+    </Grid>
+</Page>
